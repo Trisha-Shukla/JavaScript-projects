@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 60px;
+  position: relative;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/011/426/075/small/aesthetic-white-and-green-background-with-space-for-text-modern-background-design-with-liquid-shape-white-background-with-green-liquid-shapes-free-vector.jpg");
+  background-position: center;
+  background-size: cover;
+  color: rgb(36, 62, 92);
+}
+.checkboxes {
+  font-size: 2.2rem;
+}
+#place-order {
+  border: none;
+  background-color: darkseagreen;
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+.image {
+  display: flex;
+  gap: 20px;
+}
+
+.image > img {
+  height: 200px;
+  width: 200px;
+}
+#orderid {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}

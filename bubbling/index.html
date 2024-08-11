@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: lightgreen;
+            width: 250px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #div2{
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #div3{
+            background-color: lightpink;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #div32{
+            background-color: lightgrey;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">Component1 
+        <div id="div2">Component2 
+            <div id="div3">Component3</div>
+            <!-- <div id="div32">Component32</div> -->
+        </div>
+    </div>
+    <script>
+        let div1=document.getElementById("div1");
+        let div2=document.getElementById("div2");
+        let div3=document.getElementById("div3");
+        // let div32=document.getElementById("div32");
+        div1.addEventListener("click",function(){
+            console.log("div 1 is called");
+        },true)
+        div2.addEventListener("click",function(){
+            console.log("div 2 is called");
+        })
+        div3.addEventListener("click",function(){
+            console.log("div 3 is called");
+        },true)
+        // div32.addEventListener("click",function(){
+        //     console.log("div 32 is called");
+        // },true)
+    </script>
+</body>
+</html>

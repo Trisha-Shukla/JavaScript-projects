@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disabled Example</title>
+</head>
+<body>
+  <input type="text" id="myInput" placeholder="Enter text">
+  <button id="toggleButton">Toggle Disabled State</button>
+
+  <script>
+    let input = document.getElementById('myInput');
+    let button = document.getElementById('toggleButton');
+
+    button.addEventListener('click', () => {
+      input.disabled = !input.disabled; // Toggle disabled state
+    });
+  </script>
+</body>
+</html>
